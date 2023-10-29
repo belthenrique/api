@@ -1,0 +1,18 @@
+application:
+  name: PetsUp Prd Env
+
+spring:
+  datasource:
+    url: jdbc:sqlserver://servidor-petsup.database.windows.net:1433;database=bd-petsup
+    username: admin-petsup@servidor-petsup
+    password: Gfgrupo3#
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServer2012Dialect
+
+server:
+  ssl:
+    key-store: classpath:keystore2.p12
+    key-store-password: petsup123
+    key-store-type: pkcs12
+    key-alias: petsup
+    key-password: petsup123
